@@ -1,0 +1,25 @@
+class MyThread extends Thread
+{
+	public void run()
+	{
+		try
+		{
+			System.out.println("I Am Lazy Thread");
+			Thread.sleep(2000);
+		}
+		catch (InterruptedException e)
+		{
+			System.out.println("I Got Interrupted");
+		}
+	}
+}
+class SleepExe
+{
+	public static void main(String[] args)
+	{
+		MyThread t=new MyThread();
+		t.start();
+		//t.interrupt();
+		System.out.println("End Of Main Thread");
+	}
+}

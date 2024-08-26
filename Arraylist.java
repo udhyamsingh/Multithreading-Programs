@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+class Arraylist
+{
+	public static void main(String[] args)
+	{
+		ArrayList l=new ArrayList();
+		l.add("A");
+		l.add("Z");
+		l.add("d");
+		l.add(null);
+		l.add(10);
+		l.add(20);
+		l.remove(2);
+		l.add(1,"Udhyam");
+		System.out.println(l);
+
+		
+	}
+}

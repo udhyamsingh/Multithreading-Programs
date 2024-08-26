@@ -1,0 +1,16 @@
+class MyThread extends Thread
+{
+	public void run()
+	{
+		System.out.println("Ruun method executred by thread  "+Thread.currentThread().getName());
+	}
+}
+class Test
+{
+	public static void main(String[] args)
+	{
+		MyThread t=new MyThread();
+		t.start();
+		System.out.println("Main methdo executed by thread  "+Thread.currentThread().getName());
+	}
+}
